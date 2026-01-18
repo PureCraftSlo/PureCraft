@@ -1,205 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PureCraft – Precision Laser Craft</title>
-  <meta name="description" content="PureCraft delivers premium laser cutting and engraving with precision, luxury, and craftsmanship." />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Laserski Izdelki | Rezanje & Graviranje</title>
   <style>
-    :root {
-      --gold: #c9a24d;
-      --dark: #0f0f0f;
-      --soft: #1a1a1a;
-      --text: #e6e6e6;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
-      background: var(--dark);
-      color: var(--text);
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
       line-height: 1.6;
     }
-
     header {
-      padding: 40px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      background: #111;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
     }
-
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 28px;
-      letter-spacing: 1px;
-      color: var(--gold);
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
-
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #ccc;
+    }
+    nav {
+      background: #222;
+      padding: 10px 0;
+      text-align: center;
+    }
     nav a {
-      margin-left: 32px;
+      color: #fff;
+      margin: 0 15px;
       text-decoration: none;
-      color: var(--text);
-      font-weight: 400;
-      font-size: 14px;
-      opacity: 0.85;
+      font-weight: bold;
     }
-
     nav a:hover {
-      opacity: 1;
+      color: #ff9800;
     }
-
-    .hero {
-      padding: 140px 8% 120px;
-      max-width: 1200px;
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #fff;
     }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 56px;
-      font-weight: 600;
-      max-width: 700px;
-      margin-bottom: 24px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      max-width: 520px;
-      opacity: 0.9;
-    }
-
-    .cta {
-      margin-top: 48px;
-      display: inline-block;
-      padding: 14px 34px;
-      border: 1px solid var(--gold);
-      color: var(--gold);
-      text-decoration: none;
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
-
-    .cta:hover {
-      background: var(--gold);
-      color: var(--dark);
-    }
-
     section {
-      padding: 120px 8%;
-      max-width: 1200px;
+      margin-bottom: 40px;
     }
-
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 36px;
-      margin-bottom: 60px;
-      color: var(--gold);
+    h2 {
+      border-bottom: 2px solid #ff9800;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
     }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 48px;
+    ul {
+      list-style: square;
+      padding-left: 20px;
     }
-
-    .service {
-      background: var(--soft);
-      padding: 36px;
-      border: 1px solid rgba(255,255,255,0.04);
+    .contact {
+      background: #111;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
     }
-
-    .service h3 {
-      margin-bottom: 12px;
-      font-size: 18px;
-      color: var(--gold);
+    .contact a {
+      color: #ff9800;
+      text-decoration: none;
+      font-weight: bold;
     }
-
-    .service p {
-      font-size: 14px;
-      opacity: 0.85;
-    }
-
-    .about {
-      max-width: 720px;
-      font-size: 16px;
-      opacity: 0.9;
-    }
-
     footer {
-      padding: 60px 8%;
-      border-top: 1px solid rgba(255,255,255,0.05);
-      font-size: 13px;
-      opacity: 0.7;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 40px;
-      }
-      nav {
-        display: none;
-      }
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">PureCraft</div>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <h1>Laserski Izdelki – Top Kvaliteta</h1>
+  <p>Profesionalno lasersko rezanje in graviranje po meri</p>
 </header>
 
-<div class="hero">
-  <h1>Precision Laser Craftsmanship</h1>
-  <p>Premium laser cutting and engraving for brands, architecture, and bespoke projects. Crafted with accuracy. Delivered with elegance.</p>
-  <a href="#contact" class="cta">REQUEST A QUOTE</a>
+<nav>
+  <a href="#o-nas">O nas</a>
+  <a href="#storitve">Storitve</a>
+  <a href="#zakaj-mi">Zakaj mi</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<div class="container">
+  <section id="o-nas">
+    <h2>O nas</h2>
+    <p>
+      Smo specializirani za vrhunske laserske izdelke. Ukvarjamo se z natančnim
+      laserskim rezanjem in graviranjem različnih materialov za poslovne in
+      zasebne naročnike. Naša prednost je kakovost, natančnost in profesionalen
+      pristop do vsakega projekta.
+    </p>
+  </section>
+
+  <section id="storitve">
+    <h2>Naše storitve</h2>
+    <ul>
+      <li>Lasersko rezanje lesa, akrila, plastike in drugih materialov</li>
+      <li>Lasersko graviranje logotipov, napisov in grafik</li>
+      <li>Personalizirani izdelki (darila, tablice, oznake)</li>
+      <li>Izdelava prototipov in manjših serij</li>
+      <li>Natančna izdelava po vaših načrtih</li>
+    </ul>
+  </section>
+
+  <section id="zakaj-mi">
+    <h2>Zakaj izbrati nas</h2>
+    <ul>
+      <li>Top kakovost laserske obdelave</li>
+      <li>Natančnost in ponovljivost</li>
+      <li>Hitra izdelava in zanesljivost</li>
+      <li>Profesionalen odnos do strank</li>
+      <li>Rešitve po meri</li>
+    </ul>
+  </section>
 </div>
 
-<section id="services">
-  <h2 class="section-title">Services</h2>
-  <div class="services">
-    <div class="service">
-      <h3>Laser Cutting</h3>
-      <p>High-precision cutting of wood, acrylic, and advanced materials for architectural and commercial applications.</p>
-    </div>
-    <div class="service">
-      <h3>Laser Engraving</h3>
-      <p>Permanent, refined engraving for branding, signage, awards, and luxury products.</p>
-    </div>
-    <div class="service">
-      <h3>Bespoke Projects</h3>
-      <p>Custom-designed solutions tailored to premium interiors, events, and corporate gifts.</p>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <h2 class="section-title">About PureCraft</h2>
-  <p class="about">PureCraft is a precision-focused laser studio dedicated to refined craftsmanship and high-end execution. We collaborate with designers, architects, and brands who value accuracy, minimalism, and premium presentation.</p>
-</section>
-
-<section id="contact">
-  <h2 class="section-title">Contact</h2>
-  <p class="about">For inquiries, collaborations, or custom requests, contact us at <strong>info@purecraft.studio</strong></p>
-</section>
+<div class="contact" id="kontakt">
+  <h2>Kontakt</h2>
+  <p>Za povpraševanja in naročila nas kontaktirajte:</p>
+  <p>Email: <a href="mailto:smrekar.teodor@gmail.com">smrekar.teodor@gmail.com</a></p>
+</div>
 
 <footer>
-  <div>© 2026 PureCraft. All rights reserved.</div>
-  <div>Precision • Craft • Luxury</div>
+  <p>&copy; 2026 Laserski Izdelki. Vse pravice pridržane.</p>
 </footer>
 
 </body>
